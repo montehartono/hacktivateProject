@@ -10,14 +10,6 @@ export default class MyHeader extends React.Component {
         <Body>
           <Title>WhatsApp</Title>
         </Body>
-        <Right>
-          <Button transparent>
-            <Icon name="search" />
-          </Button>
-          <Button transparent>
-            <Icon type="SimpleLineIcons" name="options-vertical" />
-          </Button>
-        </Right>
       </Header>
     );
   }

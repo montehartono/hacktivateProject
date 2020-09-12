@@ -16,7 +16,11 @@ import {
 import Moment from "moment";
 import ThemeColors from "../constants/ThemeColors";
 
-export default class Calls extends Component {
+interface MyProps {
+  calls: Array<any>;
+}
+
+export default class Calls extends Component <MyProps>{
   render() {
     return (
       <Container>
@@ -42,9 +46,6 @@ export default class Calls extends Component {
             </ListItem>
           )}
         />
-        <Fab style={styles.fab} position="bottomRight">
-          <Icon name="md-call" />
-        </Fab>
       </Container>
     );
   }

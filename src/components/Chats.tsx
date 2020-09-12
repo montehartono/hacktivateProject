@@ -39,9 +39,6 @@ export default class Chats extends Component {
             </ListItem>
           )}
         />
-        <Fab style={styles.fab} position="bottomRight">
-          <Icon name="md-text" />
-        </Fab>
       </Container>
     );
   }

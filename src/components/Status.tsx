@@ -15,7 +15,12 @@ import {
 import Moment from "moment";
 import ThemeColors from "../constants/ThemeColors";
 
-export default class Status extends Component {
+interface MyProps {
+  statusItems: Array<any>;
+  user: any;
+}
+
+export default class Status extends Component <MyProps>{
   render() {
     return (
       <Container>
@@ -50,21 +55,6 @@ export default class Status extends Component {
             </ListItem>
           )}
         />
-        <Fab
-          active={true}
-          style={styles.fab}
-          direction="up"
-          position="bottomRight"
-        >
-          <Icon name="camera" />
-          <Button style={{ backgroundColor: "lightgrey" }}>
-            <Icon
-              style={{ color: ThemeColors.primary }}
-              type="MaterialCommunityIcons"
-              name="pencil"
-            />
-          </Button>
-        </Fab>
       </Container>
     );
   }

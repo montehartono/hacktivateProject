@@ -45,15 +45,6 @@ export default class MyTabs extends React.Component {
         )}
       >
         <Tab
-          heading={
-            <TabHeading style={styles.tabStyle}>
-              <Icon style={styles.tabText} name="camera" />
-            </TabHeading>
-          }
-        >
-          <Text>camera</Text>
-        </Tab>
-        <Tab
           tabStyle={styles.tabStyle}
           activeTabStyle={styles.tabStyle}
           textStyle={styles.tabText}
